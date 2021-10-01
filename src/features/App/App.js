@@ -100,7 +100,7 @@ function DashboardContent() {
       window.location.hreg = '/';
     }
 
-  });
+  }, []);
 
 
   return (
@@ -185,12 +185,12 @@ function DashboardContent() {
                   }}
                 >
                   <div>
-                    <Button variant="contained" style={{ float: "inline-end" }} sx={{ mr: 4 }} color="error">Deletar projeto</Button>
+                    <Button variant="contained" style={{ float: "rigth" }} sx={{ mr: 4 }} color="error">Deletar projeto</Button>
                     <Button variant="contained" style={{ float: "right" }} sx={{ mr: 4 }} color="warning">Alterar projeto</Button>
                     <Button variant="contained" style={{ float: "right" }} sx={{ mr: 4 }}>Criar projeto</Button>
                     <br /><br />
                     <div id="FormNewActivity">
-                      <CreateProjectForm />
+                      {/* <CreateProjectForm /> */}
                     </div>
                   </div>
                 </Paper>
