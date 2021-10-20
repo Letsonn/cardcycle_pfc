@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { SignIn } from "./features/SignIn/SignIn";
-import App from "./features/App/App";
+import Home from "./features/Home"
 import SignUp from "./features/SignUp";
 import KanbanBoard from "./features/Kanban";
 
@@ -25,7 +25,7 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={SignIn} />
       <Route path="/signup" component={SignUp} />
-      <PrivateRoute path="/app" component={App} />
+      <PrivateRoute path="/home" component={Home} />
       <PrivateRoute path="/kanban/:id" component={KanbanBoard} />
       <Route path="*" component={() => <h1>Page not found</h1>} />
     </Switch>

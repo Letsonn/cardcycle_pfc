@@ -51,7 +51,7 @@ export function SignIn() {
       const requestAuth = await api.post('/sessions/', { email, password });
       const { authenticationToken } = requestAuth.data.user;
       login(authenticationToken);
-      history.push('/app');
+      history.push('/home');
     } catch (e) {
       setError('Algo deu errado com o seu login, verifique os seus dados.');
     }
