@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { SignIn } from "./features/SignIn/SignIn";
-import Home from "./features/Home"
+import Home from "./features/Home/index"
 import SignUp from "./features/SignUp";
 import KanbanBoard from "./features/Kanban";
 

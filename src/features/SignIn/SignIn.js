@@ -62,7 +62,7 @@ export function SignIn() {
     const isAuth = isAuthenticated();
 
     if (isAuth) {
-      history.push('/app');
+      history.push('/home');
     }
   });
 
