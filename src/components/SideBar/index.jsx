@@ -79,7 +79,10 @@ export default function SideBar() {
             </a>
           </li>
           <li>
-            <a href="#" className="nav-link px-0 align-middle text-white">
+            <a
+              href="/caixa-entrada"
+              className="nav-link px-0 align-middle text-white"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
